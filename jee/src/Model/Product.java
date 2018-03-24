@@ -1,9 +1,12 @@
 package Model;
 
+import java.sql.Date;
+
 public class Product {
 	private String nom,id;
 	private double prix;
 	private int quantite;
+	private Date date;
 	public String getNom() {
 		return nom;
 	}
@@ -28,12 +31,14 @@ public class Product {
 	public void setQuantite(int quantite) {
 		this.quantite = quantite;
 	}
-	public Product(String nom, String id, double prix, int quantite) {
+
+	public Product(String nom, String id, double prix, int quantite, Date date) {
 		super();
 		this.nom = nom;
 		this.id = id;
 		this.prix = prix;
 		this.quantite = quantite;
+		this.date = date;
 	}
 	public Product() {
 		super();
